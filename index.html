@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=New+Amsterdam&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/Assets/Icono.png" alt="Logo de Encriptador">
+    </header>
+    <main>
+        <section class="contenedor">
+            <textarea class="textArea" cols="30" rows="5" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="alert">
+                <img src="./assets/alert-icon.png" alt="Icono de Aviso">
+                <p class="textoAviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="botonEncriptar">Encriptar</button>
+                <button class="botonDesencriptar">Desencriptar</button>              
+            </div>    
+        </section>
+        <section class="card">
+            <div class="card-container">
+            <img src="./assets/Imagen1.png" alt="Imagen decorativa del campo de texto" class="img-muneco">               
+            <p class="msj-uno">Ningún mensaje fue encontrado</p>
+            <p class="msj-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <textarea type="mensaje" class="msj-container"></textarea>
+                <button type="submit" class="copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+*{
+  background: #e2e8c0;
+  font-family: Kodchasan;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;  
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 50px;
+    width: 10;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.contenedor{
+    width: 60%;
+    margin: 10px 0px 0px 14px;
+    background: transparent;
+
+}
+
+.alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.textoAviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #846C5B;
+}
+
+
+.textArea{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: none;
+    resize: none;  
+}
+
+::placeholder{color: #846C5B;}
+.textArea:focus{
+    outline: none;
+}
+
+.card{
+    width: 320px;
+    height: 600px;
+    background: #F9FBE7;
+    box-shadow: 10px 24px 32px -8px #343A40;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.card-container{
+    width: 250;
+    margin: auto;
+    margin-top: 50%;
+    background: #F9FBE7;
+}
+
+.img-muneco{
+    background: #F9FBE7;
+   
+}
+
+.msj-uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    background: transparent;    
+}
+
+.msj-dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    background: transparent;
+
+}
+
+.msj-container{
+    width: 87%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #846C5B;
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;    
+}
+
+.msj-container{
+    outline: none;
+} 
+
+.copy{
+    width: 275px;
+    height: 40px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #F9FBE7;
+    border: 1px solid #363020;
+    border-radius: 20PX;
+    cursor: pointer;
+   
+}
+
+
+.areaMensaje:focus{
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    margin-top: 200px;
+    
+    
+}
+
+.botonEncriptar{
+    background-color: #363020;
+    border: 1px solid #363020;
+    border-radius: 24PX;
+    color: #C7C7A6;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.botonDesencriptar{
+    background: #C7C7A6;
+    border: 1px solid #363020;
+    border-radius: 24PX;
+    color: #363020;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+@media (max-width: 1200px){
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .contenedor{
+        margin: 10px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .alert{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+    .buttons{
+        position: inherit;
+        margin: 15px;
+    }
+    .card{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .card-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .img-muneco{
+        display: none;
+    }
+    .copy{
+        position: inherit;
+        width: 100%;
+    }
+    .msj-container{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
